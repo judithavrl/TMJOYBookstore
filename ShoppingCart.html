@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/tmjoy_icon3-.png">
+    <title>TMJOY Bookstore</title>
+</head>
+
+<body>
+
+    <div class="container cart-header bg-dark">
+        <div class="row mt-auto">
+            <div class="col">
+                <a href="Home.html">
+                    <img src="images/pngicon3.png" alt="" width="150" height="150"></a>
+            </div>
+            <div class="col p-5 text-center">
+                <h3 style="color: #ffffff;">SHOPPING CART (2)</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div class="container p-3">
+        <nav>
+            <ol class="breadcrumb bg-transparent pl-0 cart-breadcrumb">
+                <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Cart Checkout</li>
+            </ol>
+        </nav>
+    </div>
+
+
+    <!-- Checkout -->
+    <section class="checkout">
+        <div class="container">
+            <div class="row justify-content-between" style="margin-bottom: 100px;">
+                <div class="col-lg-6">
+                    <h4 class="mb-4">Your Items</h4>
+                    <div class="row mb-4">
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <img src="images/Best Seller - Dilan 1990-1.jpg" width="90" height="120">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="m-4">Dilan 1990</h5>
+                            <p class="m-4" style="color:#B7B7B7;">Rp 40.000</p>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-outline-dark btn-sm">
+                                <img src="images/minus-icon.png" alt="" width="10" height="10"></button>
+                            <span class="mx-2">1</span>
+                            <button type="button" class="btn btn-outline-dark btn-sm">
+                                <img src="images/plus-icon.png" alt="" width="10" height="10"></button>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <img src="images/Rekomendasi - Senja, Hujan dan Cerita yang Telah Usai.jpg" width="90"
+                                    height="120">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="m-4">Senja, Hujan dan Cerita yang Telah Usai</h5>
+                            <p class="m-4" style="color:#B7B7B7;">Rp 62.000</p>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-outline-dark btn-sm">
+                                <img src="images/minus-icon.png" alt="" width="10" height="10"></button>
+                            <span class="mx-2">1</span>
+                            <button type="button" class="btn btn-outline-dark btn-sm">
+                                <img src="images/plus-icon.png" alt="" width="10" height="10"></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6">
+                    <div class="card rounded-0 checkout-detail">
+                        <div class="card-body">
+                            <h5 class="card-title">Order Summary</h5>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <h6 class="m-0">Dilan 1990</h6>
+                                    <small style="color: #B7B7B7;">1 Items</small>
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <h6 class="m-0 align-self-center text-success">Rp 40.000</h6>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <h6 class="m-0">Senja, Hujan dan Cerita yang Telah Usai</h6>
+                                    <small style="color: #B7B7B7;">1 Items</small>
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <h6 class="m-0 align-self-center text-success">Rp 62.000</h6>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <h6 class="m-0">Total Harga</h6>
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <h6 class="m-0 align-self-center text-primary">Rp 102.000</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Checkout -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Checkout Berhasil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Anda akan mendapatkan barang anda dalam beberapa hari
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="Home.html">
+                        <button type="button" class="btn btn-primary">Home</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer 1-->
+    <footer class="site-footer bg-light p-4">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col order-first">
+                            <h2 class="footer-heading mb-4">Newsletter</h2>
+                            <p>Register and Get Discount Offers</p>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="ENTER YOUR EMAIL"
+                                    aria-label="search" aria-describedby="basic-addon1">
+                                <button class="btn btn-secondary" type=" button">Register</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col order-last">
+                    <h2 class="footer-heading mb-4">Follow Us</h2>
+                    <a href="https://www.facebook.com" target="blank" class="smoothscroll pl-0 pr-3">
+                        <img src="images/facebook-icon.png" width="45" height="45"></img></a>
+                    <a href="https://instagram.com" target="blank" class="pl-3 pr-3">
+                        <img src="images/instagram-icon.png" width="40" height="40"></img></a>
+                    <a href="https://www.twitter.com" target="blank" class="pl-3 pr-3">
+                        <img src="images/twitter-icon.png" width="35" height="35"></img></a>
+                    <a href="https://www.youtube.com" target="blank" class="pl-3 pr-3">
+                        <img src="images/youtube-icon.png" width="40" height="40"></img></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer 1-->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row p-2">
+                <div class="col">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--footer 2-->
+    <footer class="site-footer bg-light">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="footer-heading mb-4">Information</h2>
+                            <p>About TMJOY Bookstore</p>
+                            <p>Publisher Cooperation</p>
+                            <p>Terms and Condition</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2 class="footer-heading mb-4">Paymend Method</h2>
+                    <table class="table table-borderless">
+                        <tr>
+                            <th>
+                                <img src="images/payment - bca.png" width="100" height="35">
+                            </th>
+                            <th>
+                                <img src="images/payment - bni.png" width="100" height="35">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="images/payment - bri.png" width="50" height="50">
+                            </th>
+                            <th>
+                                <img src="images/payment - gopay.png" width="120" height="30">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="images/payment - mandiri.png" width="100" height="30">
+                            </th>
+                            <th>
+                                <img src="images/payment - ovo.png" width="80" height="30">
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="col">
+                    <h2 class="footer-heading mb-4">Shipping Method</h2>
+                    <table class="table table-borderless">
+                        <tr>
+                            <th>
+                                <img src="images/shipping - gojek.png" width="100" height="30">
+                            </th>
+                            <th>
+                                <img src="images/shipping - grab.png" width="90" height="30">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="images/shipping - j&t.png" width="100" height="30">
+                            </th>
+                            <th>
+                                <img src="images/shipping - jne.png" width="90" height="35">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="images/shipping - pos.png" width="75" height="50">
+                            </th>
+                            <th>
+                                <img src="images/shipping - sicepat.png" width="90" height="35">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <img src="images/shipping - tiki.png" width="100" height="35">
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="pt-5">
+                        <p>
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights
+                            reserved | This
+                            template is made by
+                            <a href="https://www.instagram.com/judithavrl/" target="_blank"
+                                class="link-warning">Juditha&#10030;,</a>
+                            <a href="https://www.instagram.com/tirzaunggu_/" target="_blank"
+                                class="link-info">Tirza&#10031;,</a>
+                            <a>dan</a>
+                            <a href="https://www.instagram.com/mrtn22_/" target="_blank"
+                                class="link-success">Martin&#10028;.</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!--end footer 2-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
